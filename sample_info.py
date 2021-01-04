@@ -18,11 +18,10 @@ AUTH_USERS = []
 # MongoDB information
 DATABASE_URI = "mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb]?retryWrites=true&w=majority"
 DATABASE_NAME = 'Telegram'
-COLLECTION_NAME = '@MaxxBots'  # If you are using the same database, then use different collection name for each bot
+COLLECTION_NAME = 'Telegram_Files'  # If you are using the same database, then use different collection name for each bot
 
 # Messages
-START_MSG = """
-**Hey! Dear!**
+START_MSG = """**Hey! Dear!**
 
 💡 I am TG Media Search Bot
 
