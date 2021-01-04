@@ -13,8 +13,8 @@ async def start(bot, message):
     """Start command handler"""
     buttons = [[
         InlineKeyboardButton('🔍 𝑺𝒆𝒂𝒓𝒄𝒉 𝑴𝒆𝒅𝒊𝒂', switch_inline_query_current_chat=''),
-        InlineKeyboardButton('💡 𝑪𝒉𝒂𝒏𝒏𝒆𝒍', url='https://t.me/HindiMoviesDL')],
-    ]]
+        [InlineKeyboardButton('💡 𝑪𝒉𝒂𝒏𝒏𝒆𝒍', url='https://t.me/HindiMoviesDL')]
+    ]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply(START_MSG, reply_markup=reply_markup)
 
