@@ -12,8 +12,8 @@ logger = logging.getLogger(__name__)
 async def start(bot, message):
     """Start command handler"""
     buttons = [[
-        InlineKeyboardButton('Search Here', switch_inline_query_current_chat=''),
-        InlineKeyboardButton('Go Inline', switch_inline_query=''),
+        InlineKeyboardButton('🔍 𝑺𝒆𝒂𝒓𝒄𝒉 𝑴𝒆𝒅𝒊𝒂', switch_inline_query_current_chat=''),
+        InlineKeyboardButton('💡 𝑪𝒉𝒂𝒏𝒏𝒆𝒍', url='https://t.me/HindiMoviesDL')],
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply(START_MSG, reply_markup=reply_markup)
@@ -48,7 +48,7 @@ async def total(bot, message):
     msg = await message.reply("Processing...⏳", quote=True)
     try:
         total = await Media.count_documents()
-        await msg.edit(f'📁 Saved files: {total}')
+        await msg.edit(f'📁 𝐓𝐨𝐭𝐚𝐥 𝐅𝐢𝐥𝐞𝐬 𝐢𝐧 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞: {total}')
     except Exception as e:
         logger.exception('Failed to check total files')
         await msg.edit(f'Error: {e}')
@@ -88,6 +88,6 @@ async def delete(bot, message):
         'caption': reply.caption
     })
     if result.deleted_count:
-        await msg.edit('File is successfully deleted from database')
+        await msg.edit('𝐹𝑖𝑙𝑒 𝑖𝑠 𝑠𝑢𝑐𝑐𝑒𝑠𝑠𝑓𝑢𝑙𝑙𝑦 𝑑𝑒𝑙𝑒𝑡𝑒𝑑 𝑓𝑟𝑜𝑚 𝑑𝑎𝑡𝑎𝑏𝑎𝑠𝑒 🙂')
     else:
         await msg.edit('File not found in database')
