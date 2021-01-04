@@ -18,7 +18,7 @@ AUTH_USERS = []
 # MongoDB information
 DATABASE_URI = "mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb]?retryWrites=true&w=majority"
 DATABASE_NAME = 'Telegram'
-COLLECTION_NAME = 'channel_files'  # If you are using the same database, then use different collection name for each bot
+COLLECTION_NAME = '@MaxxBots'  # If you are using the same database, then use different collection name for each bot
 
 # Messages
 START_MSG = """
@@ -26,7 +26,9 @@ START_MSG = """
 
 💡 I am TG Media Search Bot
 
-```Here you can search files in inline mode. Just press follwing buttons and start searching.```
+<code>Here you can search files in inline mode. Just press follwing buttons and start searching </code>
+
+👲 Bot By: @MaxxBots
 
 """
 
