@@ -22,9 +22,12 @@ COLLECTION_NAME = 'channel_files'  # If you are using the same database, then us
 
 # Messages
 START_MSG = """
-**Hi, I'm Media Search bot**
+**Hey! Dear!**
 
-Here you can search files in inline mode. Just press follwing buttons and start searching.
+💡 I am TG Media Search Bot
+
+```Here you can search files in inline mode. Just press follwing buttons and start searching.```
+
 """
 
-SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
+SHARE_BUTTON_TEXT = ' 𝐶ℎ𝑒𝑐𝑘𝑜𝑢𝑡 𝑇ℎ𝑖𝑠 {username} 𝐵𝑜𝑡 . 𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚 𝐹𝑖𝑙𝑒𝑠 𝑆𝑒𝑎𝑟𝑐ℎ 🔍 𝐵𝑜𝑡 😊. '
